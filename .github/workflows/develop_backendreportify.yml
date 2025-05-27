@@ -38,8 +38,7 @@ jobs:
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
-        run: |
-          cd GestionReclamos
+        run: 
           zip release.zip ./* -r
 
       - name: Upload artifact for deployment jobs
@@ -47,7 +46,7 @@ jobs:
         with:
           name: python-app
           path: |
-            cd GestionReclamos/release.zip
+            release.zip
             !venv/
 
   deploy:
