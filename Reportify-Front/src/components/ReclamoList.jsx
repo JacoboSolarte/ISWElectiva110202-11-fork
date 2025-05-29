@@ -87,12 +87,12 @@ const ClaimList = () => {
       });
   };
 
-  const filteredClaims = claims.filter((claim) =>
-    claim.asunto?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    claim.descripcion?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    claim.empresa?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    claim.titulo?.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+const filteredClaims = Array.isArray(claims)
+  ? claims.filter((claim) =>
+      [claim.asunto, claim.descripcion, claim.empresa, claim.titulo]
+        .some((text) => typeof text === "string" && text.toLowerCase().includes(searchQuery.toLowerCase()))
+    )
+  : [];
 
   if (loading) return <p className="text-center text-gray-500">Cargando reclamos...</p>;
   if (error) return <p className="text-center text-red-500">{error}</p>;
