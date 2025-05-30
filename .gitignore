@@ -1,0 +1,55 @@
+# Ignorar el entorno virtual
+venv/
+
+# Ignorar los archivos de compilación de Python
+*.pyc
+_pycache_/
+
+# Ignorar node_modules (si usas React en el frontend)
+client/node_modules/
+
+# Ignorar archivos de configuración locales
+.env
+
+# Byte-compiled / optimized / DLL files
+_pycache_/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+GestionReclamos/AppReclamos/__pycache__/__init__.cpython-313.pyc
+GestionReclamos/AppReclamos/__pycache__/admin.cpython-313.pyc
+GestionReclamos/AppReclamos/__pycache__/apps.cpython-313.pyc
+GestionReclamos/AppReclamos/__pycache__/models.cpython-313.pyc
+GestionReclamos/AppReclamos/__pycache__/serializers.cpython-313.pyc
+GestionReclamos/AppReclamos/__pycache__/urls.cpython-313.pyc
+GestionReclamos/AppReclamos/__pycache__/views.cpython-313.pyc
+GestionReclamos/AppReclamos/migrations/0006_remove_reclamo_comprobante.py
+GestionReclamos/AppReclamos/migrations/__pycache__/__init__.cpython-313.pyc
+GestionReclamos/AppReclamos/migrations/__pycache__/0001_initial.cpython-313.pyc
+GestionReclamos/AppReclamos/migrations/__pycache__/0002_comentario.cpython-313.pyc
+GestionReclamos/AppReclamos/migrations/__pycache__/0003_alter_comentario_reclamo.cpython-313.pyc
+GestionReclamos/GestionReclamos/__pycache__/__init__.cpython-313.pyc
+GestionReclamos/GestionReclamos/__pycache__/settings.cpython-313.pyc
+GestionReclamos/GestionReclamos/__pycache__/urls.cpython-313.pyc
