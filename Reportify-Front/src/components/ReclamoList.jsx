@@ -21,7 +21,7 @@ const ClaimList = () => {
 
   const fetchClaims = () => {
     axios
-      .get(`${import.meta.env.VITE_API_URL}/Reclamo/listar-reclamos`)
+      .get(`${import.meta.env.VITE_API_URL}/Reclamo/listar-reclamos/`)
       .then((response) => {
         setClaims(response.data);
         setLoading(false);
